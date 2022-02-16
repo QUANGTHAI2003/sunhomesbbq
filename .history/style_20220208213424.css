@@ -1,0 +1,21 @@
+.header {
+    height: 100px;
+    background-color: #000;
+}
+
+.nav {
+}
+
+.nav img {
+}
+#logo {
+    float: left;
+}
+.nav li {
+    float: right;
+    list-style: none;
+}
+
+.nav li a {
+    padding: 6px 15px;
+}

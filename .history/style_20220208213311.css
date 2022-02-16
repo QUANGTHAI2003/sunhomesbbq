@@ -1,0 +1,22 @@
+.header {
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+}
+
+.nav {
+}
+
+.nav img {
+}
+#logo {
+    float: left;
+}
+.nav li {
+    float: right;
+    list-style: none;
+    position: relative;
+}
+
+.nav li a {
+}

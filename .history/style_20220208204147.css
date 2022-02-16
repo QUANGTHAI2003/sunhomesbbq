@@ -1,0 +1,16 @@
+.header {
+    height: 100px;
+    background-color: #000;
+}
+
+.nav {
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    color: #c6c6c6;
+    text-decoration: none;
+}

@@ -1,0 +1,36 @@
+.header {
+    height: 100px;
+    background-color: #000;
+}
+
+.nav {
+    max-width: 90%;
+}
+
+#logo {
+    float: left;
+    padding: 0 100px;
+}
+.nav li {
+    display: inline-block;
+    list-style: none;
+    line-height: 100px;
+}
+
+.nav li a {
+    color: #c6c6c6;
+    padding: 6px 15px;
+    text-decoration: none;
+}
+
+.nav li:hover a {
+    color: #f3e385;
+}
+
+.nav li:last-child a {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    text-transform: none;
+    background-color: #f3e385;
+    color: #000;
+}

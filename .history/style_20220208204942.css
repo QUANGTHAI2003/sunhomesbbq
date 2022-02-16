@@ -1,0 +1,20 @@
+.header {
+    height: 100px;
+    background-color: #000;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav img {
+}
+
+.nav li {
+}
+
+.nav li a {
+    color: #c6c6c6;
+    text-decoration: none;
+    line-height: 100px;
+}
