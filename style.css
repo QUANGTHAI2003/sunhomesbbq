@@ -8,8 +8,23 @@ html {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
 }
+
 .container {
     overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .header {
@@ -25,6 +40,7 @@ html {
     padding: 8px;
     width: 350px;
 }
+
 /* Navigation bar */
 
 .nav {
@@ -42,15 +58,17 @@ html {
     #logo {
         padding: 6px 50px;
     }
+
     .header img {
         width: 300px;
     }
+
     .nav a {
         font-size: 14px;
     }
 }
 
-.nav > ul {
+.nav>ul {
     flex-wrap: wrap;
 }
 
@@ -65,17 +83,19 @@ html {
     padding: 6px 15px;
     text-decoration: none;
 }
+
 .nav li a:active,
 .nav li a:hover {
     color: #f3e385;
     font-weight: bold;
 }
+
 .nav li:active a {
     color: #f3e385;
     font-weight: bold;
 }
 
-.nav li:last-child a {
+/* .nav li:last-child a {
     border: 1px solid #c6c6c6;
     border-radius: 5px;
     text-transform: none;
@@ -84,7 +104,57 @@ html {
 .nav li:last-child a:hover {
     background-color: #f3e385;
     color: #000;
+} */
+.form-group {
+    border-radius: 5px;
+    text-transform: none;
+    display: flex;
+    margin: 0 30px;
 }
+
+.slash {
+    margin: 41px -12px;
+    color: #f3e385;
+}
+
+.bx-cart {
+    font-size: 30px;
+    padding: 34px 6px;
+}
+
+/* Slider */
+.sliders .slider-main {
+    position: relative;
+    margin: 0 auto
+}
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3e385;
+    background-color: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    font-size: 48px;
+    z-index: 10;
+}
+
+.slider-next {
+    right: 0;
+}
+
+.slider-prev {
+    left: 0;
+}
+
 /* Content */
 .content {
     height: 100vh;
@@ -120,12 +190,13 @@ html {
     font-size: 16px;
     margin: 0 0 20px;
     line-height: 1.4;
-    color: #777777;
+    color: #777;
 }
 
 .section-left-sunhomes .section-content span {
     font-weight: 700;
 }
+
 .section-images-sunhomes {
     flex-basis: 50%;
 }
@@ -193,6 +264,7 @@ html {
     margin: 0 auto;
     padding: 24px;
 }
+
 .section-images-menu {
     display: flex;
 }
@@ -212,12 +284,13 @@ html {
     font-size: 16px;
     margin: 0 20px;
     line-height: 1.4;
-    color: #777777;
+    color: #777;
 }
 
 .section-right-menu .section-content span {
     font-weight: 700;
 }
+
 .section-images-menu {
     flex: 1;
 }
@@ -344,18 +417,20 @@ html {
 }
 
 .sign-now {
-    background: url(./img/banner.jpg);
+    background-image: url(./img/banner.jpg);
+    opacity: 0.85;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.84);
     width: 100%;
     height: 100px;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .endow {
     max-width: 80%;
     margin: 0 auto;
     opacity: 1;
+    z-index: 10;
 }
 
 .sign-now span {
@@ -363,7 +438,7 @@ html {
     line-height: 100px;
     margin: 0 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .sign-now .endow #Email {
@@ -517,6 +592,8 @@ html {
     transition: 0.8s;
 }
 
+/* Back to top */
+
 #myBtn {
     position: fixed;
     bottom: 30px;
@@ -560,7 +637,7 @@ html {
 .para-GT {
     line-height: 1.4;
     margin: 20px 0;
-    color: #777777;
+    color: #777;
 }
 
 .Gioi-Thieu1,
@@ -575,6 +652,7 @@ html {
 }
 
 @media screen and (max-width: 1400px) {
+
     .Gioi-Thieu1,
     .Gioi-Thieu2 {
         width: 500px;
@@ -618,7 +696,7 @@ html {
     margin: 8px 0;
     padding: 6px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    color: #777777;
+    color: #777;
     font-size: 16px;
 }
 
@@ -746,7 +824,7 @@ html {
 
 .recruit p {
     padding-top: 20px;
-    color: #777777;
+    color: #777;
 }
 
 .recruit ul {
@@ -759,7 +837,7 @@ html {
     margin: 8px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     font-size: 16px;
-    color: #777777;
+    color: #777;
 }
 
 .recruit ul li .bx-check {
@@ -784,30 +862,34 @@ html {
 }
 
 .img-TD img {
-    width: 100%;
-    height: 70%;
+    width: 40vw;
+    height: 80vh;
     margin: 16px 8px;
     padding-top: 30px;
+    object-fit: cover;
 }
 
 /* Lien he */
 
 .LH {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .info-LH {
     flex: 1;
 }
+
 .heading-LH {
     font-size: 40px;
     font-weight: bold;
     font-family: 'Berkshire Swash';
     padding-top: 20px;
 }
+
 .info-LH p {
     padding-top: 20px;
-    color: #777777;
+    color: #777;
 }
 
 .info-LH ul {
@@ -819,8 +901,9 @@ html {
     padding: 6px;
     margin: 8px 0;
     font-size: 16px;
-    color: #777777;
+    color: #777;
 }
+
 .enter-info {
     flex: 1;
     margin: 25px 12px 15px;
@@ -857,6 +940,19 @@ html {
     box-shadow: inset rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.enter-info #sign {
+    width: 140px;
+    background-color: #f3e385;
+    font-size: 16px;
+}
+
+.enter-info #sign:hover {
+    box-shadow: inset rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    opacity: 0.8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Tin tuc */
 
 .TT {
@@ -870,7 +966,7 @@ html {
     justify-content: space-between;
     flex: 4;
     margin: 160px 0;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .content-news {
@@ -891,7 +987,7 @@ html {
 .content-news p {
     padding: 12px 0;
     line-height: 1.6;
-    color: #777777;
+    color: #777;
     font-size: 14px;
     opacity: 0.8;
 }
@@ -910,11 +1006,27 @@ html {
 
 .search input {
     margin: 40px 0;
+    padding: 0 6px;
     display: inline-block;
     width: 100%;
     height: 30px;
     outline: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.search .bx-search {
+    position: fixed;
+    top: 156px;
+    right: 138px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 11px;
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .search input:focus {
@@ -922,7 +1034,7 @@ html {
 }
 
 .search input::placeholder {
-    padding: 0 6px;
+    padding: 0 4px;
 }
 
 .search p {
@@ -944,6 +1056,7 @@ html {
 .search a:hover {
     opacity: 0.85;
 }
+
 .post {
     display: flex;
     margin: 16px 0;
