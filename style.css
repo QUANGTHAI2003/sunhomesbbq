@@ -51,7 +51,7 @@ body::-webkit-scrollbar-track {
 
 #logo {
     float: left;
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -95,21 +95,11 @@ body::-webkit-scrollbar-track {
     font-weight: bold;
 }
 
-/* .nav li:last-child a {
-    border: 1px solid #c6c6c6;
-    border-radius: 5px;
-    text-transform: none;
-}
-
-.nav li:last-child a:hover {
-    background-color: #f3e385;
-    color: #000;
-} */
 .form-group {
     border-radius: 5px;
     text-transform: none;
     display: flex;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .slash {
@@ -119,7 +109,7 @@ body::-webkit-scrollbar-track {
 
 .bx-cart {
     font-size: 30px;
-    padding: 34px 6px;
+    padding: 34px 4px;
 }
 
 /* Slider */
